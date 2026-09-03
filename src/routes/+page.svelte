@@ -1,3 +1,6 @@
+
+<a href="/detail">detailpagina</a>
+
 <script>
     let { data } = $props();
 
