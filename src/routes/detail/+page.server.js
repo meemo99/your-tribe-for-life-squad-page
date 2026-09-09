@@ -4,12 +4,11 @@ export async function load(){
     // Zet de API-response om naar JSON
     const personData = await personRes.json();
     
-    // Bepaalt welke gegevns van de student uit de API worden opgehaald 
+         // Bepaalt welke gegevns van de student uit de API worden opgehaald 
     const params = new URLSearchParams({
         fields: 'name,team_s13,bio,profilecard'
     })
-
-    // Geeft de gegevens van de student door aan de pagina
+         // Geeft de gegevens van de student door aan de pagina
     return{
         person: personData.data
     }

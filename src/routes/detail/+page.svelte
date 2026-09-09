@@ -1,9 +1,9 @@
-<h1>detail</h1>
-
 <script>
     let {data} = $props();
     const persons = data.persons;
 </script>
+
+<h1>detail</h1>
 
 {#each persons as person}
     <h2>{person.name}</h2> <br>
