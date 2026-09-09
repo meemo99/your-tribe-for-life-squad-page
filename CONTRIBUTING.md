@@ -73,6 +73,30 @@ Een issue bevat minimaal:
 - Welke keuzes onderweg zijn gemaakt
 - Wat het resultaat is
 
+### issue template
+Om onze issues consistent en navolgbaar te houden gebruiken we bij ieder nieuw issue dezelfde basisstructuur.
+
+```
+# [Korte duidelijke titel]
+
+## Doel
+<!-- Wat wil je met dit issue bereiken? -->
+
+
+## Context
+<!-- Waarom is dit issue nodig? Wat is het probleem, knelpunt of de aanleiding? -->
+
+
+## Acceptance criteria
+<!-- Wanneer is dit issue klaar? -->
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
+```
+- Tijdens het werken gebruiken we de comments onder het issue om belangrijke keuzes, schetsen, feedback, blockers en iteraties vast te leggen. Zo blijft het issue zelf overzichtelijk, terwijl het proces wel navolgbaar blijft.
+
+
 ### `Branches`
 Vanuit de main maken wij branches aan voor een korte taak.
 - De naam beschrijft waar je aan werkt, bijvoorbeeld:
