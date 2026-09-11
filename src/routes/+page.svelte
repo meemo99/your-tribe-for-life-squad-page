@@ -8,6 +8,7 @@
 
 {#each persons as person}
     <a href="/{person.id}"> {person.name}</a><br />
+    <p>werkt de font en kleur?</p>
 {/each}
 
 <style>
@@ -47,8 +48,8 @@
 
         /* Texts */
         --color-text-primary: #520931;
-        --color-text-primary: #EE7BBE;
-        --color-text-primary: #F38AB8;
+        --color-text-secunday: #EE7BBE;
+        --color-text-accent: #F38AB8;
 
         /* Nav buttons (Mac versie) */
         --color-nav-green: #63C327;
@@ -58,14 +59,18 @@
 
     @font-face {
         font-family: 'Science Gothic';
-        src: url(`src/lib/fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf`) format(truetype);
+        src: url('/fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Rock Salt';
-        src: url(`src/lib/fonts/RockSalt-Regular.ttf`) format(truetype);
+        src: url('/fonts/RockSalt-Regular.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Ropa Sans';
-        src: url(`src/lib/fonts/RopaSans-Italic.ttf`) format(truetype);
+        src: url('/fonts/RopaSans-Italic.ttf') format('truetype');
+    }
+    p{
+        color: var(--color-text-secunday);
+        font-family: var(--font-primary);
     }
 </style>
