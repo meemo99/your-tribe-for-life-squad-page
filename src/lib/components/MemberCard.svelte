@@ -13,7 +13,7 @@
 
   <div class="middle">
     <div class="sidebar">
-      <p class="team-name"></p>
+      <p class="team-name">team naam</p>
     </div>
 
     <img
@@ -36,12 +36,57 @@
 
 <style>
   article {
-    width: 300px;
-    height: 300px;
-    background-color: pink;
+    width: fit-content;
+    border: 1px solid black;
+    margin: 1em;
   }
+
+  header {
+    height: 30px;
+    border-bottom: 1px solid black;
+  }
+
+  /* span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: pink;
+  } */
 
   .mugshots {
     object-fit: cover;
   }
+
+  .middle {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 40px;
+    /* background-color: pink; */
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .team-name {
+    transform: rotate(-90deg);
+    /* white-space: nowrap; */
+  }
+
+  .right-sidebar {
+    width: 20px;
+    /* background-color: pink; */
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
 </style>
