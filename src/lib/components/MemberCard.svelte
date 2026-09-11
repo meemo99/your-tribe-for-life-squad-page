@@ -39,22 +39,35 @@
     width: fit-content;
     border: 1px solid black;
     margin: 1em;
+    border-radius: 20px;
   }
 
   header {
     height: 30px;
     border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
   }
 
-  /* span {
-    width: 30px;
-    height: 30px;
+  .window-icons {
+    display: flex;
+    gap: 0.2rem;
+    /* height: 20px; */
+    padding-left: 0.5rem;
+  }
+
+  .window-icons span {
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: pink;
-  } */
+    border: 1px solid black;
+  } 
 
   .mugshots {
+    width: 220px;
+    height: 260px;
     object-fit: cover;
+    border-bottom: 1px solid black;
   }
 
   .middle {
@@ -62,6 +75,10 @@
   }
 
   .sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
     width: 40px;
     /* background-color: pink; */
     border-right: 1px solid black;
@@ -70,7 +87,7 @@
 
   .team-name {
     transform: rotate(-90deg);
-    /* white-space: nowrap; */
+    white-space: nowrap;
   }
 
   .right-sidebar {
