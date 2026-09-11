@@ -2,15 +2,27 @@
   let { person } = $props();
 </script>
 
-<article>
+<article class="card">
 
-<div class="card">
+<header class="header">
+<div class="window-icons">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</header>
 
-    <ul class="icons">
-        <li class="icon"></li>
-        <li class="icon"></li>
-        <li class="icon"></li>
-    </ul>
+<div class="middle"></div>
+
+<div class="sidebar">
+    <p class="team-name"> </p>
+</div>
+
+<img>
+
+<div class="right-sidebar">
+
+</div>
 
   <h3>
     <a href="/{person.id}">
@@ -18,7 +30,7 @@
     </a>
   </h3>
 
-</div>
+
 </article>
 
 <style>
