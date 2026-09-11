@@ -9,3 +9,63 @@
 {#each persons as person}
     <a href="/{person.id}"> {person.name}</a><br />
 {/each}
+
+<style>
+    :global(body) {
+        /* font */
+        /* Font H1 and all p */
+        --font-primary: 'Science Gothic';
+        /* Font for h2 */
+        --font-secondary: 'Ropa Sans';
+        /* Font for '(squad) 2G' */
+        --font-tertiary: 'Rock Salt';
+
+        /* Border-radius */ 
+        --border-radius-regular: 15px;
+        --border-radius-circel: 30px;
+
+        /* Colors */
+
+        /* Background */
+        --background-color-primary: #FECCDD;
+
+        /* Cards */
+        --color-card-pink: #EF78C9;
+        --color-card-team-pink: #F34CA6;
+
+        --color-card-purple: #9D96FF;
+        --color-card-team-purple: #6F66F1;
+
+        --color-card-orange: #FFB881;
+        --color-card-team-orange: #F08837;
+
+        --color-card-green: #CFEB79;
+        --color-card-team-green: #ADD72C;
+
+        --color-card-blue: #BDE3FF;
+        --color-card-team-blue: #70BFF8;
+
+        /* Texts */
+        --color-text-primary: #520931;
+        --color-text-primary: #EE7BBE;
+        --color-text-primary: #F38AB8;
+
+        /* Nav buttons (Mac versie) */
+        --color-nav-green: #63C327;
+        --color-nav-red: #F74E4E;
+        --color-nav-orange: #F29955;
+    }
+
+    @font-face {
+        font-family: 'Science Gothic';
+        src: url(`src/lib/fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf`) format(truetype);
+    }
+    @font-face {
+        font-family: 'Rock Salt';
+        src: url(`src/lib/fonts/RockSalt-Regular.ttf`) format(truetype);
+    }
+    @font-face {
+        font-family: 'Ropa Sans';
+        src: url(`src/lib/fonts/RopaSans-Italic.ttf`) format(truetype);
+    }
+</style>
