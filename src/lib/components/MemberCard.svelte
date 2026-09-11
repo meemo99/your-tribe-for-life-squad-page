@@ -64,11 +64,27 @@
   } 
 
   .mugshots {
-    width: 220px;
-    height: 260px;
+    width: clamp(180px, 20vw, 220px);
+    height: auto;
+    aspect-ratio: 5 / 6;
     object-fit: cover;
     border-bottom: 1px solid black;
   }
+
+  /* @media (min-width: 600px) { 
+    .mugshots {
+    width: 200px;
+    height: 240px;
+  }
+  }
+
+  @media (min-width: 1024px) { 
+    .mugshots {
+    width: 220px;
+    height: 260px;
+  }
+  } */
+
 
   .middle {
     display: flex;
