@@ -1,11 +1,19 @@
 :root {
         /* font */
+
         /* Font H1 and all p */
         --font-primary: 'Science Gothic';
         /* Font for h2 */
         --font-secondary: 'Ropa Sans';
         /* Font for '(squad) 2G' */
         --font-tertiary: 'Rock Salt';
+
+        /* font sizes */
+        --font-size-s: 0.875rem;   /* 14px */
+        --font-size-base: 1rem;     /* 16px */
+        --font-size-h3: 1.25rem;    /* 20px */
+        --font-size-h2: 1.5rem;     /* 24px */
+        --font-size-h1: 2rem;      /* 32px */
 
         /* Border-radius */ 
         --border-radius-regular: 15px;
