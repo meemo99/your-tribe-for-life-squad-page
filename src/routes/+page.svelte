@@ -1,7 +1,6 @@
 <script>
     let { data } = $props();
-
-    const persons = $derived(data.persons);
+    const persons = $derived (data.persons);
 </script>
 
 <h1>Squadpage Squad G</h1>
@@ -24,3 +23,4 @@
         {/if}
     </a>
 {/each}
+
