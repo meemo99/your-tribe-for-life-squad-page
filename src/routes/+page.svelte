@@ -1,26 +1,30 @@
 <script>
-    let { data } = $props();
-    const persons = $derived (data.persons);
+  let { data } = $props();
+
+  const persons = $derived(data.persons);
+
+  import MemberCard from "$lib/components/MemberCard.svelte";
 </script>
 
 <h1>Squadpage Squad G</h1>
 
-{#each persons as person}
-    <a href="/">
-        {person.name}<br />
-        {#if person.mugshot_year2}
-            <img
-                src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
-                alt={`Mugshot of ${person.name}`}
-                width="300"
-                height="300"
-            />
-        {:else}
-            <img
-                src={`https://fdnd.directus.app/assets/${person.mugshot}`}
-                alt={`Mugshot of ${person.name}`}
-            />
-        {/if}
-    </a>
-{/each}
+<ul class="members">
+  {#each persons as person}
+    <li>
+      <MemberCard {person} />
+    </li>
+  {/each}
+</ul>
 
+<style>
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+  }
+
+</style>
