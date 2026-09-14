@@ -27,9 +27,4 @@
     margin: 0;
   }
 
-  @media (min-width: 1024px) {
-    .members {
-      justify-content: center;
-    }
-  }
 </style>

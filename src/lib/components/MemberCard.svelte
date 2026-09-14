@@ -51,7 +51,6 @@
   .window-icons {
     display: flex;
     gap: 0.2rem;
-    /* height: 20px; */
     padding-left: 0.5rem;
   }
 
@@ -70,21 +69,6 @@
     border-bottom: 1px solid black;
   }
 
-  /* @media (min-width: 600px) { 
-    .mugshots {
-    width: 200px;
-    height: 240px;
-  }
-  }
-
-  @media (min-width: 1024px) { 
-    .mugshots {
-    width: 220px;
-    height: 260px;
-  }
-  } */
-
-
   .middle {
     display: flex;
   }
@@ -95,7 +79,6 @@
     align-items: center;
     text-transform: uppercase;
     width: 40px;
-    /* background-color: pink; */
     border-right: 1px solid black;
     border-bottom: 1px solid black;
   }
@@ -107,7 +90,6 @@
 
   .right-sidebar {
     width: 20px;
-    /* background-color: pink; */
     border-left: 1px solid black;
     border-bottom: 1px solid black;
   }
