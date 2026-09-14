@@ -38,7 +38,6 @@
   article {
     width: fit-content;
     border: 1px solid black;
-    margin: 1em;
     border-radius: 20px;
   }
 

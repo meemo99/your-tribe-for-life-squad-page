@@ -21,6 +21,7 @@
  flex-wrap: wrap;
  gap: 1rem;
  padding: 1rem;
+ justify-content: center;
 }
 
 @media (min-width: 1024px) { 
