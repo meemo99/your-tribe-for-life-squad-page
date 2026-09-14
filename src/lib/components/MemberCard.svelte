@@ -13,7 +13,7 @@
 
   <div class="middle">
     <div class="sidebar">
-      <p class="team-name">team naam</p>
+      <p class="team-name">{person.team_s13}</p>
     </div>
 
     <img
