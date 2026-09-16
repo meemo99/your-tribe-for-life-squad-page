@@ -41,3 +41,66 @@
     </div>
 </div>
 
+<style>
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+
+    }
+    .block-container {
+        flex: 1;
+    }
+    .traffic-lights {
+        background-color: #9d96ff;
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 21px 21px 0px 0px;
+    }
+
+    .light {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .red {
+        background-color: #ff5f57;
+        margin-left: 10px;
+    }
+
+    .yellow {
+        background-color: #ffbd2e;
+    }
+
+    .green {
+        background-color: #28ca42;
+    }
+    section {
+        background-color: white;
+        opacity: 83%;
+        width: auto;
+        height: fit-content;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-top: solid 1.5px #520931;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 4px;
+        background-color: #feccdd;
+        border-radius: 15px;
+        width: fit-content;
+        padding: 8px;
+        border: 1.5px solid #520931;
+    }
+</style>
