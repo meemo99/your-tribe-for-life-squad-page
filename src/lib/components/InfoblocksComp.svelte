@@ -48,6 +48,11 @@
         gap: 16px;
         padding: 16px;
 
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 24px;
+            padding: 24px;
+        }
     }
     .block-container {
         flex: 1;
