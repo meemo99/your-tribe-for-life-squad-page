@@ -2,7 +2,7 @@
   let { person } = $props();
 </script>
 <header>
-    <p class="fdnd">FDND</p>
+    <p class="logo-fdnd">FDND</p>
     <a href="/" aria-label="Terug naar overzicht" class="back-btn"> Terug naar overzicht</a>
 </header>
 
@@ -29,7 +29,7 @@
 
 
 <style>
-.fdnd{
+.logo-fdnd{
     color: var(--color-text-secunday);
 }
 header{
@@ -70,18 +70,15 @@ h2{
     font-family: var(--font-secondary);
     font-size: var(--font-size-h2);
     color: var(--color-text-primary);
-    grid-area: 2;
-
-    /* tablet versie */
-
-    @media (min-width: 583px){
-        grid-area: 1/2;
-    }
 }
 .bio-detail{
-    max-width: 30ch;
+    font-size: clamp(1rem, 0.9rem + 1vw, 1.5rem);
+    max-width: 40ch;
     margin-bottom: 40px;
-    grid-area: 3;
+
+    @media (min-width: 855px){
+        max-width: 60ch;
+    }
 }
 .project{
     font-family: var(--font-primary);
