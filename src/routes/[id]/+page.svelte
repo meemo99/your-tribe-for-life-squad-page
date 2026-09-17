@@ -1,6 +1,7 @@
 <script>
     let {data} = $props()
     const person = $derived (data.person)
+    import InfoblocksComp from "$lib/components/InfoblocksComp.svelte";
 </script>
 
 <h1>Detail</h1>
@@ -10,6 +11,8 @@
 <blockquote>{@html person.bio}</blockquote>
 <a href={person.profilecard}>Profilecard</a>
 
+<InfoblocksComp {person} />
+
 <style>
     blockquote{
         background-color: beige;
@@ -17,5 +20,3 @@
         padding: 15px;
     }
 </style>
-
-
