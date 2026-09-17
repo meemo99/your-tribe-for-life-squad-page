@@ -48,7 +48,7 @@
         gap: 16px;
         padding: 16px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 583px) {
             flex-direction: row;
             gap: 24px;
             padding: 24px;
