@@ -27,8 +27,28 @@
     margin: 0;
   }
 
-  .members li {
+  .members li:nth-child(1) {
   --card-color: var(--color-card-pink);
   --team-color: var(--color-card-team-pink);
+}
+
+.members li:nth-child(2) {
+  --card-color: var(--color-card-purple);
+  --team-color: var(--color-card-team-purple);
+}
+
+.members li:nth-child(3) {
+  --card-color: var(--color-card-orange);
+  --team-color: var(--color-card-team-orange);
+}
+
+.members li:nth-child(4) {
+  --card-color: var(--color-card-green);
+  --team-color: var(--color-card-team-green);
+}
+
+.members li:nth-child(5) {
+  --card-color: var(--color-card-blue);
+  --team-color: var(--color-card-team-blue);
 }
 </style>
