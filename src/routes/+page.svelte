@@ -27,4 +27,8 @@
     margin: 0;
   }
 
+  .members li {
+  --card-color: var(--color-card-pink);
+  --team-color: var(--color-card-team-pink);
+}
 </style>

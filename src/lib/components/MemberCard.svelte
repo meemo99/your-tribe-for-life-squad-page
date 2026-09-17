@@ -39,6 +39,7 @@
     width: fit-content;
     border: 1px solid black;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   header {
@@ -46,6 +47,7 @@
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
+    background-color: var(--card-color);
   }
 
   .window-icons {
@@ -81,6 +83,7 @@
     width: 40px;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    background-color: var(--team-color);
   }
 
   .team-name {
@@ -92,10 +95,14 @@
     width: 20px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background-color: var(--card-color);
   }
 
   h3 {
     text-align: center;
+    background-color: var(--card-color);
+    margin: 0;
+    padding: 1rem;
   }
 
   a {
