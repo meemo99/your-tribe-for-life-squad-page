@@ -2,11 +2,11 @@
   let { data } = $props();
 
   const persons = $derived(data.persons);
-
+  import Header from "$lib/components/Header.svelte";
   import MemberCard from "$lib/components/MemberCard.svelte";
 </script>
 
-<h1>Squadpage Squad G</h1>
+<Header />
 
 <ul class="members">
   {#each persons as person}
