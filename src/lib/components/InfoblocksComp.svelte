@@ -18,6 +18,11 @@
                 <p>✨ {person.fav_hobby}</p>
                 <p>🌤️ {person.fav_season}</p>
                 <p>🗓️ {person.birthdate}</p>
+                <li><span aria-hidden="true">📍</span> {person.residency}</li>
+                <li><span aria-hidden="true">🍿</span> {person.fav_movie}</li>
+                <li><span aria-hidden="true">✨</span> {person.fav_hobby}</li>
+                <li><span aria-hidden="true">🌤️</span> {person.fav_season}</li>
+                <li><span aria-hidden="true">🗓️</span> {person.birthdate}</li>
             </ul>
         </section>
     </div>
