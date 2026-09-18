@@ -1,26 +1,26 @@
 import { error } from '@sveltejs/kit';
 
 
-export async function load({params}){
+export async function load({ params }) {
     const query = new URLSearchParams({
-        fields: 'name,team_s13,bio,profilecard,birthdate,residency,fav_season,fav_hobby,fav_movie,fav_feature,fav_attribute,fav_tag,fav_property'
+        fields: 'name,team_s13,bio,profilecard,birthdate,residency,fav_season,fav_hobby,fav_movie,fav_feature,fav_attribute,fav_tag,fav_property, mugshot_year2,github_handle,profilecard'
     })
 
-    const personRes = await fetch (
+    const personRes = await fetch(
         `https://fdnd.directus.app/items/person/${params.id}?${query}`
     )
-    
+
     if (!personRes.ok) {
         error(personRes.status, 'Kon deze persoon niet ophalen');
     }
-    
+
     const personData = await personRes.json();
-    
+
     if (!personData.data) {
         error(404, 'Persoon niet gevonden');
     }
 
-    return{
+    return {
         person: personData.data
     }
 }

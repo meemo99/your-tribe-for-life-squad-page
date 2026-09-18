@@ -2,49 +2,61 @@
     let { person } = $props();
 </script>
 
-<div class="card-container">
-    <div class="block-container">
-        <div class="traffic-lights">
-            <div class="light red"></div>
-            <div class="light yellow"></div>
-            <div class="light green"></div>
+<main>
+    <div class="card-container">
+        <div class="block-container">
+            <div class="traffic-lights">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+
+            <section>
+                <h3>About me</h3>
+                <ul>
+                    <li>
+                        <span aria-hidden="true">📍</span>
+                        {person.residency}
+                    </li>
+                    <li>
+                        <span aria-hidden="true">🍿</span>
+                        {person.fav_movie}
+                    </li>
+                    <li>
+                        <span aria-hidden="true">✨</span>
+                        {person.fav_hobby}
+                    </li>
+                    <li>
+                        <span aria-hidden="true">🌤️</span>
+                        {person.fav_season}
+                    </li>
+                    <li>
+                        <span aria-hidden="true">🗓️</span>
+                        {person.birthdate}
+                    </li>
+                </ul>
+            </section>
         </div>
 
-        <section>
-            <h3>About me</h3>
-            <ul>
-                <p>📍 {person.residency}</p>
-                <p>🍿 {person.fav_movie}</p>
-                <p>✨ {person.fav_hobby}</p>
-                <p>🌤️ {person.fav_season}</p>
-                <p>🗓️ {person.birthdate}</p>
-                <li><span aria-hidden="true">📍</span> {person.residency}</li>
-                <li><span aria-hidden="true">🍿</span> {person.fav_movie}</li>
-                <li><span aria-hidden="true">✨</span> {person.fav_hobby}</li>
-                <li><span aria-hidden="true">🌤️</span> {person.fav_season}</li>
-                <li><span aria-hidden="true">🗓️</span> {person.birthdate}</li>
-            </ul>
-        </section>
-    </div>
+        <div class="block-container">
+            <div class="traffic-lights">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
 
-    <div class="block-container">
-        <div class="traffic-lights">
-            <div class="light red"></div>
-            <div class="light yellow"></div>
-            <div class="light green"></div>
+            <section>
+                <h3>Frontend Faves</h3>
+                <ul>
+                    <li class="fav-tag">{person.fav_feature}</li>
+                    <li class="fav-tag">{person.fav_attribute}</li>
+                    <li class="fav-tag">{person.fav_tag}</li>
+                    <li class="fav-tag">{person.fav_property}</li>
+                </ul>
+            </section>
         </div>
-
-        <section>
-            <h3>Frontend Faves</h3>
-            <ul>
-                <li class="fav-tag">{person.fav_feature}</li>
-                <li class="fav-tag">{person.fav_attribute}</li>
-                <li class="fav-tag">{person.fav_tag}</li>
-                <li class="fav-tag">{person.fav_property}</li>
-            </ul>
-        </section>
     </div>
-</div>
+</main>
 
 <style>
     .card-container {
@@ -52,6 +64,7 @@
         flex-direction: column;
         gap: 16px;
         padding: 16px;
+        margin-left: -10px;
 
         @media (min-width: 583px) {
             flex-direction: row;
@@ -105,7 +118,6 @@
         padding: 0;
     }
 
-    li {
     .fav-tag {
         margin-bottom: 4px;
         background-color: #feccdd;
