@@ -2,8 +2,8 @@
   let { person } = $props();
 </script>
 
-<article class="card">
-  <header class="header">
+<article>
+  <header>
     <div class="window-icons">
       <span></span>
       <span></span>
