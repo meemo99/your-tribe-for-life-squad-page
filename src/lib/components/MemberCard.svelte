@@ -19,7 +19,7 @@
     <img
       class="mugshots"
       src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
-      alt={`Mugshot of ${person.name}`}
+      alt=""
       width="250"
       height="300"
     />
