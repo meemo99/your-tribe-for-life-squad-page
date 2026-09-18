@@ -17,12 +17,12 @@
     </div>
 
     <img
-    class="mugshots"
-    src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
-    alt={`Mugshot of ${person.name}`}
-    width="250"
-    height="300"
-  />
+      class="mugshots"
+      src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
+      alt={`Mugshot of ${person.name}`}
+      width="250"
+      height="300"
+    />
 
     <div class="right-sidebar"></div>
   </div>
@@ -36,16 +36,17 @@
 
 <style>
   article {
-    --color-text-dark: #3D0625;
+    --color-text-dark: #3d0625;
+    --card-border: 1px solid black;
     width: fit-content;
-    border: 1px solid black;
+    border: var(--card-border);
     border-radius: 20px;
     overflow: hidden;
   }
 
   header {
     height: 30px;
-    border-bottom: 1px solid black;
+    border-bottom: var(--card-border);
     display: flex;
     align-items: center;
     background-color: var(--card-color);
@@ -61,28 +62,27 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 1px solid black;
-  } 
+    border: var(--card-border);
+  }
 
   .window-icons span:nth-child(1) {
-   background-color:  var(--color-nav-red) ;
-  } 
+    background-color: var(--color-nav-red);
+  }
 
   .window-icons span:nth-child(2) {
     background-color: var(--color-nav-orange);
-  } 
+  }
 
   .window-icons span:nth-child(3) {
     background-color: var(--color-nav-green);
-  } 
-
+  }
 
   .mugshots {
     width: clamp(180px, 20vw, 220px);
     height: auto;
     aspect-ratio: 5 / 6;
     object-fit: cover;
-    border-bottom: 1px solid black;
+    border-bottom: var(--card-border);
   }
 
   .middle {
@@ -95,8 +95,8 @@
     align-items: center;
     text-transform: uppercase;
     width: 40px;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: var(--card-border);
+    border-bottom: var(--card-border);
     background-color: var(--team-color);
   }
 
@@ -109,8 +109,8 @@
 
   .right-sidebar {
     width: 20px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: var(--card-border);
+    border-bottom: var(--card-border);
     background-color: var(--card-color);
   }
 
@@ -119,12 +119,11 @@
     background-color: var(--card-color);
     margin: 0;
     padding: 1rem;
+    font-weight: 100;
   }
 
   a {
     text-decoration: none;
     color: var(--color-text-dark);
   }
-
-
 </style>
