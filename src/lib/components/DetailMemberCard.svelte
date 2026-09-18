@@ -6,7 +6,7 @@
     <a href="/" aria-label="Terug naar overzicht" class="back-btn"> Terug naar overzicht</a>
 </header>
 
-<div>
+<main>
     <img
         src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
         alt=""
@@ -24,7 +24,7 @@
             <a class="project" href={`https://github.com/${person.github_handle}`}>Github</a>
         {/if}
     </section>
-</div>
+</main>
 
 
 
@@ -41,7 +41,7 @@ header{
     color: var(--color-text-primary);
     letter-spacing: 2px;
 }
-div{
+main{
     display: grid;
     grid-template-columns: 1fr;
 
