@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load({params}){
     const query = new URLSearchParams({
-        fields: 'name,team_s13,bio,profilecard'
+        fields: 'name,team_s13,bio,profilecard,mugshot_year2,github_handle'
     })
 
     const personRes = await fetch (
