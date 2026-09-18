@@ -63,6 +63,19 @@
     border: 1px solid black;
   } 
 
+  .window-icons span:nth-child(1) {
+   background-color:  var(--color-nav-red) ;
+  } 
+
+  .window-icons span:nth-child(2) {
+    background-color: var(--color-nav-orange);
+  } 
+
+  .window-icons span:nth-child(3) {
+    background-color: var(--color-nav-green);
+  } 
+
+
   .mugshots {
     width: clamp(180px, 20vw, 220px);
     height: auto;
