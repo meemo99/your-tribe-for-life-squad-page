@@ -37,10 +37,10 @@
         <section>
             <h3>Frontend Faves</h3>
             <ul>
-                <li>{person.fav_feature}</li>
-                <li>{person.fav_attribute}</li>
-                <li>{person.fav_tag}</li>
-                <li>{person.fav_property}</li>
+                <li class="fav-tag">{person.fav_feature}</li>
+                <li class="fav-tag">{person.fav_attribute}</li>
+                <li class="fav-tag">{person.fav_tag}</li>
+                <li class="fav-tag">{person.fav_property}</li>
             </ul>
         </section>
     </div>
@@ -106,6 +106,7 @@
     }
 
     li {
+    .fav-tag {
         margin-bottom: 4px;
         background-color: #feccdd;
         border-radius: 15px;
