@@ -36,6 +36,7 @@
 
 <style>
   article {
+    --color-text-dark: #3D0625;
     width: fit-content;
     border: 1px solid black;
     border-radius: 20px;
@@ -102,6 +103,8 @@
   .team-name {
     transform: rotate(-90deg);
     white-space: nowrap;
+    color: var(--color-text-dark);
+    font-size: var(--font-size-h3);
   }
 
   .right-sidebar {
@@ -120,6 +123,7 @@
 
   a {
     text-decoration: none;
+    color: var(--color-text-dark);
   }
 
 
