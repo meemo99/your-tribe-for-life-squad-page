@@ -17,7 +17,6 @@
     </div>
 
     <img
-      class="mugshots"
       src={`https://fdnd.directus.app/assets/${person.mugshot_year2}`}
       alt=""
       width="250"
@@ -77,7 +76,7 @@
     background-color: var(--color-nav-green);
   }
 
-  .mugshots {
+  img {
     width: clamp(180px, 20vw, 220px);
     height: auto;
     aspect-ratio: 5 / 6;
