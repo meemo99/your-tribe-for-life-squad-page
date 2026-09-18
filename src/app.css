@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wdth,wght@125,500&display=swap');
 :root {
         /* font */
 
@@ -66,4 +67,10 @@
     p{
         color: var(--color-text-primary);
         font-family: var(--font-primary);
+    }
+    body {
+	background:
+		linear-gradient(#52093120 1px, transparent 1px) 0 0 / 3rem 3rem,
+		linear-gradient(90deg, #52093120 1px, transparent 1px) 0 0 / 3rem 3rem,
+		linear-gradient(to bottom, #ffd0da 0%, #fcd9e1 50%, #fde6ea 100%);
     }
