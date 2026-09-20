@@ -15,9 +15,10 @@
         alt=""
         width="250"
         height="300"
+        style="view-transition-name: photo-{person.id};"
     />
     <section>
-        <h2>{person.name}</h2>
+        <h2 style="view-transition-name: name-{person.id};">{person.name}</h2>
 
         <p class="bio-detail">{@html person.bio}</p>
 
@@ -44,6 +45,10 @@
         text-decoration: none;
         color: var(--color-text-primary);
         letter-spacing: 2px;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
     main {
         display: grid;
