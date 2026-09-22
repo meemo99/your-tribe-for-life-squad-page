@@ -1,3 +1,39 @@
+# Squadpage Chamaliyat 
+
+## Inhoudsopgave
+## Designkeuzes
+## Mockups van de site
+## Beschrijving van de site
+## Gebruik van de site
+## Kenmerken van de site (code)
+## Bronnen
+## Code conventies en CONTRIBUTING.MD
+## Installatie instructies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
