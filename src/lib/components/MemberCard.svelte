@@ -21,12 +21,13 @@
       alt=""
       width="250"
       height="300"
+      style="view-transition-name: photo-{person.id}"
     />
 
     <div class="right-sidebar"></div>
   </div>
 
-  <h3>
+  <h3 style="view-transition-name: name-{person.id}">
     <a href="/{person.id}">
       {person.name}
     </a>
